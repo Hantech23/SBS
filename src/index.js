@@ -8,4 +8,13 @@ function component() {
   return element;
 }
   
-document.body.appendChild(component());
+// document.body.appendChild(component());
+
+function logo() {
+  const element = document.createElement('div');
+
+  element.innerHTML = "STAR BEAUTY SUPPLY";
+  return element;
+}
+
+document.body.appendChild(logo());
