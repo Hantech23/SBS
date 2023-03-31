@@ -1,20 +1,17 @@
-import _ from 'lodash';
-import myName from './myName';
+import './style.css';
 
-function component() {
-  const element = document.createElement('div');
-  
-  element.innerHTML = myName("Woobin");
-  return element;
-}
-  
-// document.body.appendChild(component());
 
 function logo() {
-  const element = document.createElement('div');
+  const star = document.createElement('div');
+  star.innerHTML = "STAR";
 
-  element.innerHTML = "STAR BEAUTY SUPPLY";
-  return element;
+  const beauty = document.createElement('div');
+  beauty.innerHTML = "BEAUTY";
+
+  const supply = document.createElement('div');
+  supply.innerHTML = "SUPPLY";
+
+  return star + beauty;
 }
 
 document.body.appendChild(logo());
