@@ -1,11 +1,18 @@
 import _ from 'lodash';
 import './style.css';
 
-function logo() {
+const header = document.createElement('div');
+header.classList.add('header');
+document.body.appendChild(header);
 
+
+
+
+
+function logo(location) {
 const logoParent = document.createElement('div');
 logoParent.classList.add('logoParent');
-document.body.appendChild(logoParent);
+location.appendChild(logoParent);
 const star = document.createElement('div');
 star.innerHTML = "STAR";
 star.classList.add('star');
@@ -19,7 +26,7 @@ supply.innerHTML = "SUPPLY";
 supply.classList.add('supply');
 logoParent.appendChild(supply);
 }
-logo();
+logo(header);
 
 
 
