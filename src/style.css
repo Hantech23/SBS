@@ -26,3 +26,10 @@ body {
     column-gap: 3%;
 }
 
+.bodyImage {
+    max-width: 56%;
+    max-height: .5%;
+    margin: auto;
+    display: block;
+}
+

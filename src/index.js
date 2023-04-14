@@ -1,13 +1,10 @@
 import _ from 'lodash';
 import './style.css';
+import frontImage from './nina-hill-pKXPJWksvUg-unsplash.jpg';
 
 const header = document.createElement('div');
 header.classList.add('header');
 document.body.appendChild(header);
-
-
-
-
 
 function logo(location) {
 const logoParent = document.createElement('div');
@@ -27,6 +24,11 @@ supply.classList.add('supply');
 logoParent.appendChild(supply);
 }
 logo(header);
+
+const bodyImage = new Image();
+bodyImage.src = frontImage;
+bodyImage.classList.add('bodyImage');
+document.body.appendChild(bodyImage);
 
 
 
