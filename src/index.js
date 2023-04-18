@@ -62,6 +62,9 @@ bodyImage.src = frontImage;
 bodyImage.classList.add('bodyImage');
 document.body.appendChild(bodyImage);
 
+const beautyServices = document.createElement('div');
+beautyServices.classList.add('beautyServices');
+document.body.appendChild(beautyServices);
 
 
 
