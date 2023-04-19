@@ -57,14 +57,20 @@ function dropMenu(location) {
 }
 dropMenu(dropDownMenu);
 
+
 const bodyImage = new Image();
 bodyImage.src = frontImage;
 bodyImage.classList.add('bodyImage');
 document.body.appendChild(bodyImage);
 
+const beautyServicesParent = document.createElement('div');
+beautyServicesParent.classList.add('beautyServicesParent');
+document.body.appendChild(beautyServicesParent);
 const beautyServices = document.createElement('div');
+beautyServices.innerHTML = "Beauty Services";
 beautyServices.classList.add('beautyServices');
-document.body.appendChild(beautyServices);
+beautyServicesParent.appendChild(beautyServices);
+
 
 
 

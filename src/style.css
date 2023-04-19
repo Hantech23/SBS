@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Allura-Regular;
+    src: url(./Allura-Regular.ttf);
+}
+
+/*Fonts/Allura-Rgular.ttf*/
 /*body {
     margin: 2% 22% 0;
 }*/
@@ -35,7 +41,7 @@
 .dropDownMenu {
     display: flex;
     justify-content: center;
-    font-size: 1.1vw;
+    font-size: 75px;
     gap: 6%;
     font-family: sans-serif;
     letter-spacing: 0.1vw;
@@ -49,8 +55,13 @@
     margin: 0 auto 4%;
 }
 
-.beautyServices {
+.beautyServicesParent {
     background-color: pink;
-    height: 1000px;
+    height: 10000px;
     margin: 0;
+}
+
+.beautyServices {
+    font-size: 3rem;
+    font-family: Allura-Regular;
 }
