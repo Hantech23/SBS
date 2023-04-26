@@ -63,6 +63,7 @@ bodyImage.src = frontImage;
 bodyImage.classList.add('bodyImage');
 document.body.appendChild(bodyImage);
 
+//BEAUTY SERVICES
 const beautyServicesParent = document.createElement('div');
 beautyServicesParent.classList.add('beautyServicesParent');
 document.body.appendChild(beautyServicesParent);
@@ -70,6 +71,25 @@ const beautyServices = document.createElement('div');
 beautyServices.innerHTML = "Beauty Services";
 beautyServices.classList.add('beautyServices');
 beautyServicesParent.appendChild(beautyServices);
+const beautyServicesItems = document.createElement('div');
+beautyServicesItems.classList.add('beatyServicesItems');
+beautyServicesParent.appendChild(beautyServicesItems);
+const eyebrowTrim = document.createElement('div');
+eyebrowTrim.innerHTML = "Eyebrow Trim";
+eyebrowTrim.classList.add('eyebrowTrim');
+beautyServicesItems.appendChild(eyebrowTrim);
+const eyebrowMakeup = document.createElement('div');
+eyebrowMakeup.innerHTML = "Eyebrow Makeup";
+beautyServicesItems.appendChild(eyebrowMakeup);
+const lash = document.createElement('div');
+lash.innerHTML = "Lash Extensions";
+lash.classList.add('lash');
+beautyServicesItems.appendChild(lash);
+const indvLash = document.createElement('div');
+indvLash.innerHTML = "Individual Lash Extensions";
+beautyServicesItems.appendChild(indvLash);
+
+
 
 
 

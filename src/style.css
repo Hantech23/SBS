@@ -59,9 +59,18 @@
     background-color: pink;
     height: 10000px;
     margin: 0;
+    
 }
 
 .beautyServices {
-    font-size: 3rem;
+    font-size: 15rem;
     font-family: Allura-Regular;
+    border: 10px solid red;
+    justify-content: center;
 }
+
+.beatyServicesItems {
+    font-size: 8rem;
+    
+}
+
