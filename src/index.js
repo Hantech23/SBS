@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import './style.css';
-import frontImage from './nina-hill-pKXPJWksvUg-unsplash.jpg';
+import frontImage from './nina-hill-pKXPJWksvUg-unsplashmini.jpg';
 
 const header = document.createElement('div');
 header.classList.add('header');
@@ -88,6 +88,11 @@ beautyServicesItems.appendChild(lash);
 const indvLash = document.createElement('div');
 indvLash.innerHTML = "Individual Lash Extensions";
 beautyServicesItems.appendChild(indvLash);
+
+
+//FOOTER
+const footer = document.createElement('div');
+
 
 
 
