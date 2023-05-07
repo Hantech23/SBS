@@ -13,14 +13,14 @@
 .star {
     color: red;
     grid-row: span 2;
-    font-size: 2vw;
+    font-size: 90px;
     display: flex;
     align-items: center;
     font-weight: 600;
 }
 
 .beauty, .supply {
-    font-size: 1.7vw;
+    font-size: 80px;
     font-weight: 700;
 }
 
@@ -31,11 +31,12 @@
     text-align: center;
     vertical-align: center;
     font-family: sans-serif;
-    max-width: 13%;
-    margin: 2% 0 4% 25%;
+    width: 600px;
     gap: 1%;
     background-color: yellow;
     padding: .4% .4% .4% .1%;
+    margin: .5% 0 0 1%;
+    border-radius: 15px;
 }
 .logoParent div {
     margin: auto;
@@ -44,12 +45,12 @@
 .dropDownMenu {
     display: flex;
     justify-content: center;
-    font-size: 75px;
-    gap: 6%;
-    font-family: sans-serif;
+    font-size: 70px;
+    gap: 100px;
+    font-family: Helvetica, sans-serif;
     letter-spacing: 0.1vw;
     white-space: nowrap;
-    margin-bottom: 4%;
+    margin: 1% 0 0.8%;
 }
 
 .bodyImage {
