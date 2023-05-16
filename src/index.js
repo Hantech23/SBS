@@ -25,15 +25,41 @@ logoParent.appendChild(supply);
 }
 logo(header);
 
-const dropDownMenu = document.createElement('div');
-dropDownMenu.classList.add('dropDownMenu');
-document.body.appendChild(dropDownMenu);
+
+const nav = document.createElement('nav');
+header.appendChild(nav);
+
+
 
 function dropMenu(location) {
-  const hair = document.createElement('div');
-  hair.innerHTML = "Hair";
-  hair.classList.add('hair');
-  location.appendChild(hair);
+  const container = document.createElement('div');
+  container.classList.add('container');
+  nav.appendChild(container);
+  const menuMain = document.createElement('ul');
+  menuMain.classList.add('menu-main');
+  container.appendChild(menuMain);
+
+  const hair = document.createElement('li');
+  menuMain.appendChild(hair);
+  const hairLink = document.createElement('a');
+  const hairLinkText = document.createTextNode("Hair");
+  hairLink.appendChild(hairLinkText);
+  hairLink.href = "";
+  hair.appendChild(hairLink);
+  
+  const hairCategories = document.createElement('ul');
+  hairCategories.classList.add('hairCategories');
+  hair.appendChild(hairCategories);
+  const hairCategory1 = document.createElement('li');
+  hairCategory1.innerHTML = "VERA LOSA™ 8A 100% BRAZILIAN VIRGIN HAIR";
+  hairCategories.appendChild(hairCategory1);
+  const hairCategory1Item1 = document.createElement('li');
+  hairCategory1Item1.innerHTML = "Straight";
+  hairCategory1.appendChild(hairCategory1Item1);
+  const hairCategory1Item2 = document.createElement('li');
+  hairCategory1Item2.innerHTML = "Wavy";
+  hairCategory1.appendChild(hairCategory1Item2);
+
   const hairProducts = document.createElement('div');
   hairProducts.innerHTML = "Haircare Products";
   hairProducts.classList.add('hairProducts');
@@ -55,7 +81,7 @@ function dropMenu(location) {
   accessories.classList.add('accessories');
   location.appendChild(accessories);
 }
-dropMenu(dropDownMenu);
+dropMenu(nav);
 
 
 const bodyImage = new Image();
