@@ -47,6 +47,7 @@ function dropMenu(location) {
   hairLink.href = "";
   hair.appendChild(hairLink);
   
+  /*
   const hairCategories = document.createElement('ul');
   hairCategories.classList.add('hairCategories');
   hair.appendChild(hairCategories);
@@ -59,27 +60,47 @@ function dropMenu(location) {
   const hairCategory1Item2 = document.createElement('li');
   hairCategory1Item2.innerHTML = "Wavy";
   hairCategory1.appendChild(hairCategory1Item2);
+  */
 
-  const hairProducts = document.createElement('div');
-  hairProducts.innerHTML = "Haircare Products";
-  hairProducts.classList.add('hairProducts');
-  location.appendChild(hairProducts);
-  const cosmetics = document.createElement('div');
-  cosmetics.innerHTML = "Cosmetics";
-  cosmetics.classList.add('cosmetics');
-  location.appendChild(cosmetics);
-  const skincare = document.createElement('div');
-  skincare.innerHTML = "Skincare";
-  skincare.classList.add('skincare');
-  location.appendChild(skincare);
-  const services = document.createElement('div');
-  services.innerHTML = "Services";
-  services.classList.add('services');
-  location.appendChild(services);
-  const accessories = document.createElement('div');
-  accessories.innerHTML = "Accessories";
-  accessories.classList.add('accessories');
-  location.appendChild(accessories);
+  const hairProducts = document.createElement('li');
+  menuMain.appendChild(hairProducts);
+  const hairProductsLink = document.createElement('a')
+  const hairProductsLinkText = document.createTextNode("Hair Products");
+  hairProductsLink.appendChild(hairProductsLinkText);
+  hairProductsLink.href = "";
+  hairProducts.appendChild(hairProductsLink);
+
+  const cosmetics = document.createElement('li');
+  menuMain.appendChild(cosmetics);
+  const cosmeticsLink = document.createElement('a')
+  const cosmeticsLinkText = document.createTextNode("Cosmetics");
+  cosmeticsLink.appendChild(cosmeticsLinkText);
+  cosmeticsLink.href = "";
+  cosmetics.appendChild(cosmeticsLink);
+
+  const skincare = document.createElement('li');
+  menuMain.appendChild(skincare);
+  const skincareLink = document.createElement('a')
+  const skincareLinkText = document.createTextNode("Skincare");
+  skincareLink.appendChild(skincareLinkText);
+  skincareLink.href = "";
+  skincare.appendChild(skincareLink);
+
+  const beautyServices = document.createElement('li');
+  menuMain.appendChild(beautyServices);
+  const beautyServicesLink = document.createElement('a')
+  const beautyServicesLinkText = document.createTextNode("Beauty Services");
+  beautyServicesLink.appendChild(beautyServicesLinkText);
+  beautyServicesLink.href = "";
+  beautyServices.appendChild(beautyServicesLink);
+
+  const accessories = document.createElement('li');
+  menuMain.appendChild(accessories);
+  const accessoriesLink = document.createElement('a')
+  const accessoriesLinkText = document.createTextNode("Accessories");
+  accessoriesLink.appendChild(accessoriesLinkText);
+  accessoriesLink.href = "";
+  accessories.appendChild(accessoriesLink);
 }
 dropMenu(nav);
 
@@ -89,6 +110,7 @@ bodyImage.src = frontImage;
 bodyImage.classList.add('bodyImage');
 document.body.appendChild(bodyImage);
 
+/*
 //BEAUTY SERVICES
 const beautyServicesParent = document.createElement('div');
 beautyServicesParent.classList.add('beautyServicesParent');
