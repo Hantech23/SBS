@@ -120,15 +120,18 @@ nav li:hover .menu-sub {
     text-align: center;
     font-family: Roboto;
     padding: 0 12.5%;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 
 .itemImage {
-    height: 40vh;
+    height: 35vh;
 }
 
 h3 {
     font-family: Roboto;
     padding: 0 12.5%;
-    font-weight: 500;
+    font-weight: 100;
     font-size: 19.5px;
+    letter-spacing: 1px;
 }

@@ -3,6 +3,7 @@ import './style.css';
 import frontImage from './nina-hill-pKXPJWksvUg-unsplashmini.jpg';
 import clearance1Img from './2568671.png';
 import clearance2Img from './Scalp_Body_Scrub_Melrose_Place.jpg';
+//git subtree push --prefix dist origin gh-pages
 
 const header = document.createElement('div');
 header.classList.add('header');
@@ -88,22 +89,7 @@ function dropMenu(location) {
   hairSub1Item2Link.href = "";
   hairSub1Item2.appendChild(hairSub1Item2Link);
 
-
-  /*
-  const hairCategories = document.createElement('ul');
-  hairCategories.classList.add('hairCategories');
-  hair.appendChild(hairCategories);
-  const hairCategory1 = document.createElement('li');
-  hairCategory1.innerHTML = "VERA LOSA™ 8A 100% BRAZILIAN VIRGIN HAIR";
-  hairCategories.appendChild(hairCategory1);
-  const hairCategory1Item1 = document.createElement('li');
-  hairCategory1Item1.innerHTML = "Straight";
-  hairCategory1.appendChild(hairCategory1Item1);
-  const hairCategory1Item2 = document.createElement('li');
-  hairCategory1Item2.innerHTML = "Wavy";
-  hairCategory1.appendChild(hairCategory1Item2);
-  */
-
+  //HAIR CARE
   const hairCare = document.createElement('li');
   menuMain.appendChild(hairCare);
   const hairCareLink = document.createElement('a')
@@ -111,6 +97,41 @@ function dropMenu(location) {
   hairCareLink.appendChild(hairCareLinkText);
   hairCareLink.href = "";
   hairCare.appendChild(hairCareLink);
+  
+  const hairCareMenuSub = document.createElement('div');
+  hairCareMenuSub.classList.add('menu-sub');
+  hairCare.appendChild(hairCareMenuSub);
+
+  const hairCareSub = document.createElement('ul');
+  hairCareMenuSub.appendChild(hairCareSub);
+  const hairCareSub1 = document.createElement('li');
+  hairCareSub.appendChild(hairCareSub1);
+
+  const hairCareSub1Link = document.createElement('a');
+  const hairCareSub1LinkText = document.createTextNode("PROFESSIONAL HAIR CARE");
+  hairCareSub1Link.appendChild(hairCareSub1LinkText);
+  hairCareSub1Link.href = "";
+  hairCareSub1.appendChild(hairCareSub1Link);
+
+  const hairCareSub1ItemsContainer = document.createElement('div');
+  hairCareSub1ItemsContainer.classList.add('menu-item');
+  
+
+  /*
+  
+  
+  
+  const hairCareSub = document.createElement('ul');
+  hairCareMenuSub.appendChild(hairCareSub);
+  const hairCareSub1 = document.createElement('li');
+  hairCareSub.appendChild(hairCareSub1);
+  const hairCareSub1Link = document.createElement('a');
+  const hairCareSub1LinkText = document.createTextNode("PROFESSIONAL HAIR CARE");
+  hairCareSub1Link.appendChild(hairCareSub1LinkText);
+  hairCareSub1Link.href = "";
+  hairCareSub1.appendChild(hairSub1Link);
+  */
+
 
   const cosmetics = document.createElement('li');
   menuMain.appendChild(cosmetics);
@@ -160,7 +181,7 @@ bodyImage.classList.add('bodyImage');
 header.appendChild(bodyImage);
 
 const clearance = document.createElement('h3');
-clearance.innerHTML = "Clearance";
+clearance.innerHTML = "CLEARANCE";
 document.body.appendChild(clearance);
 
 const clearanceArrayContainer = document.createElement('div');
@@ -198,9 +219,9 @@ function createItemCard(location, Item) {
   location.append(itemCard);
 }
 
-const clearance1 = new Item("IT Cosmetics: Your Skin Better Foundation + Skincare", "$30.00", clearance1Img);
+const clearance1 = new Item("IT COSMETICS: YOUR SKIN BETTER FOUNDATION + SKINCARE", "$30.00", clearance1Img);
 addItemToArray(clearanceArray, clearance1);
-const clearance2 = new Item("OUAI: Scalp & Body Scrub", "$40.00", clearance2Img);
+const clearance2 = new Item("OUAI: SCALP & BODY SCRUB", "$40.00", clearance2Img);
 addItemToArray(clearanceArray, clearance2);
 
 function display(location, array) {
