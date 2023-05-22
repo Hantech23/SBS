@@ -59,16 +59,15 @@ function dropMenu(location) {
   const hairSub1LinkText = document.createTextNode("REMI");
   hairSub1Link.appendChild(hairSub1LinkText);
   hairSub1Link.href = "";
-  hairSub1.appendChild(hairSub1Link);
-  
+  hairSub1.appendChild(hairSub1Link);  
+
+  //REMI Straight/Wavy/Curly
   const hairSub1ItemsContainer = document.createElement('div');
   hairSub1ItemsContainer.classList.add('menu-item');
   hairSub1.appendChild(hairSub1ItemsContainer);
-
   const hairSub1Items = document.createElement('ul');
   hairSub1ItemsContainer.appendChild(hairSub1Items);
 
-  //Vera Losa Straight/Wavy/Curly
   const hairSub1Item1 = document.createElement('li');
   hairSub1Items.appendChild(hairSub1Item1);
   const hairSub1Item1Link = document.createElement('a');
@@ -93,14 +92,35 @@ function dropMenu(location) {
   hairSub1Item3Link.href = "";
   hairSub1Item3.appendChild(hairSub1Item3Link);
 
-  //REMI
+  //VERA LOSA
   const hairSub2 = document.createElement('li');
   hairSub.appendChild(hairSub2);
   const hairSub2Link = document.createElement('a');
-  const hairSub2LinkText = document.createTextNode("VERA LOSA™ 8A 100% BRAZILIAN VIRGIN HAIR");
+  const hairSub2LinkText = document.createTextNode("VERA LOSA™ 8A 100% FULL LACE WIGS");
   hairSub2Link.appendChild(hairSub2LinkText);
   hairSub2Link.href = "";
   hairSub2.appendChild(hairSub2Link);
+  //Vera Straight/Wavy/Curly
+  const hairSub2ItemsContainer = document.createElement('div');
+  hairSub2ItemsContainer.classList.add('menu-item');
+  hairSub2.appendChild(hairSub2ItemsContainer);
+  const hairSub2Items = document.createElement('ul');
+  hairSub2ItemsContainer.appendChild(hairSub2Items);
+  const hairSub2Item1 = document.createElement('li');
+  hairSub2Items.appendChild(hairSub2Item1);
+  const hairSub2Item1Link = document.createElement('a');
+  const hairSub2Item1LinkText = document.createTextNode("STRAIGHT");
+  hairSub2Item1Link.appendChild(hairSub2Item1LinkText);
+  hairSub2Item1Link.href = "";
+  hairSub2Item1.appendChild(hairSub2Item1Link);
+  const hairSub2Item2 = document.createElement('li');
+  hairSub2Items.appendChild(hairSub2Item2);
+  const hairSub2Item2Link = document.createElement('a');
+  const hairSub2Item2LinkText = document.createTextNode("WAVY");
+  hairSub2Item2Link.appendChild(hairSub2Item2LinkText);
+  hairSub2Item2Link.href = "";
+  hairSub2Item2.appendChild(hairSub2Item2Link);
+
 
   //HAIR CARE
   const hairCare = document.createElement('li');
