@@ -56,7 +56,7 @@ function dropMenu(location) {
   const hairSub1 = document.createElement('li');
   hairSub.appendChild(hairSub1);
   const hairSub1Link = document.createElement('a');
-  const hairSub1LinkText = document.createTextNode("VERA LOSA™ 8A 100% BRAZILIAN VIRGIN HAIR");
+  const hairSub1LinkText = document.createTextNode("REMI");
   hairSub1Link.appendChild(hairSub1LinkText);
   hairSub1Link.href = "";
   hairSub1.appendChild(hairSub1Link);
@@ -68,11 +68,11 @@ function dropMenu(location) {
   const hairSub1Items = document.createElement('ul');
   hairSub1ItemsContainer.appendChild(hairSub1Items);
 
-  //Vera Losa Straight/Wavy
+  //Vera Losa Straight/Wavy/Curly
   const hairSub1Item1 = document.createElement('li');
   hairSub1Items.appendChild(hairSub1Item1);
   const hairSub1Item1Link = document.createElement('a');
-  const hairSub1Item1LinkText = document.createTextNode("Straight");
+  const hairSub1Item1LinkText = document.createTextNode("STRAIGHT");
   hairSub1Item1Link.appendChild(hairSub1Item1LinkText);
   hairSub1Item1Link.href = "";
   hairSub1Item1.appendChild(hairSub1Item1Link);
@@ -80,10 +80,27 @@ function dropMenu(location) {
   const hairSub1Item2 = document.createElement('li');
   hairSub1Items.appendChild(hairSub1Item2);
   const hairSub1Item2Link = document.createElement('a');
-  const hairSub1Item2LinkText = document.createTextNode("Wavy");
+  const hairSub1Item2LinkText = document.createTextNode("WAVY");
   hairSub1Item2Link.appendChild(hairSub1Item2LinkText);
   hairSub1Item2Link.href = "";
   hairSub1Item2.appendChild(hairSub1Item2Link);
+
+  const hairSub1Item3 = document.createElement('li');
+  hairSub1Items.appendChild(hairSub1Item3);
+  const hairSub1Item3Link = document.createElement('a');
+  const hairSub1Item3LinkText = document.createTextNode("CURLY");
+  hairSub1Item3Link.appendChild(hairSub1Item3LinkText);
+  hairSub1Item3Link.href = "";
+  hairSub1Item3.appendChild(hairSub1Item3Link);
+
+  //REMI
+  const hairSub2 = document.createElement('li');
+  hairSub.appendChild(hairSub2);
+  const hairSub2Link = document.createElement('a');
+  const hairSub2LinkText = document.createTextNode("VERA LOSA™ 8A 100% BRAZILIAN VIRGIN HAIR");
+  hairSub2Link.appendChild(hairSub2LinkText);
+  hairSub2Link.href = "";
+  hairSub2.appendChild(hairSub2Link);
 
   //HAIR CARE
   const hairCare = document.createElement('li');
@@ -228,6 +245,18 @@ function display(location, array) {
 
 display(clearanceArrayContainer, clearanceArray);
 
+//FOOTER
+const footer = document.createElement('div');
+footer.classList.add('footer');
+document.body.appendChild(footer);
+
+
+
+
+
+
+
+
 
 /*
 
@@ -263,15 +292,6 @@ beautyServicesItems.appendChild(lash);
 const indvLash = document.createElement('div');
 indvLash.innerHTML = "Individual Lash Extensions";
 beautyServicesItems.appendChild(indvLash);
-
-
-//FOOTER
-const footer = document.createElement('div');
-
-
-
-
-
 
 
 

@@ -108,13 +108,17 @@ nav a{
     margin: auto;
     display: none;
     text-align: left;
-    border: 10px solid red;
+    /*border: 10px solid red;*/
+    border-top: solid rgba(88, 88, 88, 0.116) 0.1px;
+    box-shadow:  0 10px 20px #00000017;
     left: 0;
-    padding: 2em 12.5%;
+    padding: 2em 22.5%;
 }
 
-.menu-sub a {
-
+.menu-sub ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
 }
 
 nav li:hover .menu-sub {
@@ -124,9 +128,17 @@ nav li:hover .menu-sub {
 .menu-sub li {
     display: block;
 }
-
 .menu-sub a {
     padding: 0;
+    font-size: 15px;
+}
+
+.menu-item ul {
+    display: block;
+}
+.menu-item a {
+    letter-spacing: 1px;
+    font-size: 13px;
 }
 
 
