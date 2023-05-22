@@ -1,7 +1,8 @@
 import _ from 'lodash';
 import './style.css';
 import frontImage from './nina-hill-pKXPJWksvUg-unsplashmini.jpg';
-import clearance1Img from './2568671.jpg';
+import clearance1Img from './2568671.png';
+import clearance2Img from './Scalp_Body_Scrub_Melrose_Place.jpg';
 
 const header = document.createElement('div');
 header.classList.add('header');
@@ -43,7 +44,7 @@ function dropMenu(location) {
   const hair = document.createElement('li');
   menuMain.appendChild(hair);
   const hairLink = document.createElement('a');
-  const hairLinkText = document.createTextNode("Hair");
+  const hairLinkText = document.createTextNode("HAIR");
   hairLink.appendChild(hairLinkText);
   hairLink.href = "";
   hair.appendChild(hairLink);
@@ -106,7 +107,7 @@ function dropMenu(location) {
   const hairCare = document.createElement('li');
   menuMain.appendChild(hairCare);
   const hairCareLink = document.createElement('a')
-  const hairCareLinkText = document.createTextNode("Hair Care");
+  const hairCareLinkText = document.createTextNode("HAIR CARE");
   hairCareLink.appendChild(hairCareLinkText);
   hairCareLink.href = "";
   hairCare.appendChild(hairCareLink);
@@ -114,7 +115,7 @@ function dropMenu(location) {
   const cosmetics = document.createElement('li');
   menuMain.appendChild(cosmetics);
   const cosmeticsLink = document.createElement('a')
-  const cosmeticsLinkText = document.createTextNode("Cosmetics");
+  const cosmeticsLinkText = document.createTextNode("COSMETICS");
   cosmeticsLink.appendChild(cosmeticsLinkText);
   cosmeticsLink.href = "";
   cosmetics.appendChild(cosmeticsLink);
@@ -122,7 +123,7 @@ function dropMenu(location) {
   const skincare = document.createElement('li');
   menuMain.appendChild(skincare);
   const skincareLink = document.createElement('a')
-  const skincareLinkText = document.createTextNode("Skin Care");
+  const skincareLinkText = document.createTextNode("SKIN CARE");
   skincareLink.appendChild(skincareLinkText);
   skincareLink.href = "";
   skincare.appendChild(skincareLink);
@@ -130,7 +131,7 @@ function dropMenu(location) {
   const lashes = document.createElement('li');
   menuMain.appendChild(lashes);
   const lashesLink = document.createElement('a')
-  const lashesLinkText = document.createTextNode("Lashes");
+  const lashesLinkText = document.createTextNode("LASHES");
   lashesLink.appendChild(lashesLinkText);
   lashesLink.href = "";
   lashes.appendChild(lashesLink);
@@ -138,7 +139,7 @@ function dropMenu(location) {
   const beautyServices = document.createElement('li');
   menuMain.appendChild(beautyServices);
   const beautyServicesLink = document.createElement('a')
-  const beautyServicesLinkText = document.createTextNode("Beauty Services");
+  const beautyServicesLinkText = document.createTextNode("BEAUTY SERVICES");
   beautyServicesLink.appendChild(beautyServicesLinkText);
   beautyServicesLink.href = "";
   beautyServices.appendChild(beautyServicesLink);
@@ -146,7 +147,7 @@ function dropMenu(location) {
   const accessories = document.createElement('li');
   menuMain.appendChild(accessories);
   const accessoriesLink = document.createElement('a')
-  const accessoriesLinkText = document.createTextNode("Accessories");
+  const accessoriesLinkText = document.createTextNode("ACCESSORIES");
   accessoriesLink.appendChild(accessoriesLinkText);
   accessoriesLink.href = "";
   accessories.appendChild(accessoriesLink);
@@ -181,7 +182,7 @@ function addItemToArray(location, Item) {
 function createItemCard(location, Item) {
   const itemCard = document.createElement('div');
   const itemImage = new Image();
-  itemImage.src = clearance1Img;
+  itemImage.src = Item.img;
   itemImage.classList.add('itemImage');
   const itemTitle = document.createElement('p');
   const itemPrice = document.createElement('p');
@@ -199,6 +200,8 @@ function createItemCard(location, Item) {
 
 const clearance1 = new Item("IT Cosmetics: Your Skin Better Foundation + Skincare", "$30.00", clearance1Img);
 addItemToArray(clearanceArray, clearance1);
+const clearance2 = new Item("OUAI: Scalp & Body Scrub", "$40.00", clearance2Img);
+addItemToArray(clearanceArray, clearance2);
 
 function display(location, array) {
   for (let eachItem of array) {
