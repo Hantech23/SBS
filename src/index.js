@@ -18,13 +18,9 @@ star.innerHTML = "STAR";
 star.classList.add('star');
 logoParent.appendChild(star);
 const beauty = document.createElement('div');
-beauty.innerHTML = "BEAUTY";
-beauty.classList.add('beauty');
+beauty.innerHTML = "BEAUTY SUPPLY";
+beauty.classList.add('beauty-supply');
 logoParent.appendChild(beauty);
-const supply = document.createElement('div');
-supply.innerHTML = "SUPPLY";
-supply.classList.add('supply');
-logoParent.appendChild(supply);
 }
 logo(header);
 
