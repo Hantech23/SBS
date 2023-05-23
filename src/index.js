@@ -435,13 +435,84 @@ function dropMenu(location) {
   cosmeticsSub2Link.href = "";
   cosmeticsSub2.appendChild(cosmeticsSub2Link);
 
+  const cosmeticsSub2ItemsContainer = document.createElement('div');
+  cosmeticsSub2ItemsContainer.classList.add('menu-item');
+  cosmeticsSub2.appendChild(cosmeticsSub2ItemsContainer);
+  const cosmeticsSub2Items = document.createElement('ul');
+  cosmeticsSub2ItemsContainer.appendChild(cosmeticsSub2Items);
+
+  const cosmeticsSub2Item1 = document.createElement('li');
+  cosmeticsSub2Items.appendChild(cosmeticsSub2Item1);
+  const cosmeticsSub2Item1Link = document.createElement('a');
+  const cosmeticsSub2Item1LinkText = document.createTextNode("EYELINER");
+  cosmeticsSub2Item1Link.appendChild(cosmeticsSub2Item1LinkText);
+  cosmeticsSub2Item1Link.href = "";
+  cosmeticsSub2Item1.appendChild(cosmeticsSub2Item1Link);
+
+  const cosmeticsSub2Item2 = document.createElement('li');
+  cosmeticsSub2Items.appendChild(cosmeticsSub2Item2);
+  const cosmeticsSub2Item2Link = document.createElement('a');
+  const cosmeticsSub2Item2LinkText = document.createTextNode("MASCARA");
+  cosmeticsSub2Item2Link.appendChild(cosmeticsSub2Item2LinkText);
+  cosmeticsSub2Item2Link.href = "";
+  cosmeticsSub2Item2.appendChild(cosmeticsSub2Item2Link);
+
+  const cosmeticsSub2Item3 = document.createElement('li');
+  cosmeticsSub2Items.appendChild(cosmeticsSub2Item3);
+  const cosmeticsSub2Item3Link = document.createElement('a');
+  const cosmeticsSub2Item3LinkText = document.createTextNode("EYESHADOW");
+  cosmeticsSub2Item3Link.appendChild(cosmeticsSub2Item3LinkText);
+  cosmeticsSub2Item3Link.href = "";
+  cosmeticsSub2Item3.appendChild(cosmeticsSub2Item3Link);
+
+  const cosmeticsSub2Item4 = document.createElement('li');
+  cosmeticsSub2Items.appendChild(cosmeticsSub2Item4);
+  const cosmeticsSub2Item4Link = document.createElement('a');
+  const cosmeticsSub2Item4LinkText = document.createTextNode("EYEBROW");
+  cosmeticsSub2Item4Link.appendChild(cosmeticsSub2Item4LinkText);
+  cosmeticsSub2Item4Link.href = "";
+  cosmeticsSub2Item4.appendChild(cosmeticsSub2Item4Link);
+
+
   const cosmeticsSub3 = document.createElement('li');
   cosmeticsSub.appendChild(cosmeticsSub3);
+  
   const cosmeticsSub3Link = document.createElement('a');
   const cosmeticsSub3LinkText = document.createTextNode("LIPS");
   cosmeticsSub3Link.appendChild(cosmeticsSub3LinkText);
   cosmeticsSub3Link.href = "";
   cosmeticsSub3.appendChild(cosmeticsSub3Link);
+
+  const cosmeticsSub3ItemsContainer = document.createElement('div');
+  cosmeticsSub3ItemsContainer.classList.add('menu-item');
+  cosmeticsSub3.appendChild(cosmeticsSub3ItemsContainer);
+  const cosmeticsSub3Items = document.createElement('ul');
+  cosmeticsSub3ItemsContainer.appendChild(cosmeticsSub3Items);
+
+  const cosmeticsSub3Item1 = document.createElement('li');
+  cosmeticsSub3Items.appendChild(cosmeticsSub3Item1);
+  const cosmeticsSub3Item1Link = document.createElement('a');
+  const cosmeticsSub3Item1LinkText = document.createTextNode("LIP GLOSS");
+  cosmeticsSub3Item1Link.appendChild(cosmeticsSub3Item1LinkText);
+  cosmeticsSub3Item1Link.href = "";
+  cosmeticsSub3Item1.appendChild(cosmeticsSub3Item1Link);
+
+  const cosmeticsSub3Item2 = document.createElement('li');
+  cosmeticsSub3Items.appendChild(cosmeticsSub3Item2);
+  const cosmeticsSub3Item2Link = document.createElement('a');
+  const cosmeticsSub3Item2LinkText = document.createTextNode("LIP STICK");
+  cosmeticsSub3Item2Link.appendChild(cosmeticsSub3Item2LinkText);
+  cosmeticsSub3Item2Link.href = "";
+  cosmeticsSub3Item2.appendChild(cosmeticsSub3Item2Link);
+
+  const cosmeticsSub3Item3 = document.createElement('li');
+  cosmeticsSub3Items.appendChild(cosmeticsSub3Item3);
+  const cosmeticsSub3Item3Link = document.createElement('a');
+  const cosmeticsSub3Item3LinkText = document.createTextNode("LIP LINER");
+  cosmeticsSub3Item3Link.appendChild(cosmeticsSub3Item3LinkText);
+  cosmeticsSub3Item3Link.href = "";
+  cosmeticsSub3Item3.appendChild(cosmeticsSub3Item3Link);
+
 
   const cosmeticsSub4 = document.createElement('li');
   cosmeticsSub.appendChild(cosmeticsSub4);
@@ -488,6 +559,11 @@ function dropMenu(location) {
   lashesLink.appendChild(lashesLinkText);
   //lashesLink.href = "";
   lashes.appendChild(lashesLink);
+  lashes.onclick = function() {
+    clearance.innerHTML = "LASHES";
+    clearanceArray = [];
+    display(clearanceArrayContainer, lashesArray);
+  }
 
   const beautyServices = document.createElement('li');
   menuMain.appendChild(beautyServices);
@@ -584,7 +660,9 @@ addItemToArray(clearanceArray, clearance15);
 const clearance16 = new Item("PRISTINE: DYE 613 BUNDLES 3PCS + HD 4X4 CLOSURE - BODY WAVE", "$109.99", clearance16Img);
 addItemToArray(clearanceArray, clearance16);
 
-
+let lashesArray = [];
+const lash1 = new Item("SHIBUYA - COLOR CAT 3D LASH", "$1.00", clearance7Img);
+addItemToArray(lashesArray, clearance7);
 
 
 function display(location, array) {
