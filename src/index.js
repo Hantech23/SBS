@@ -3,6 +3,20 @@ import './style.css';
 import frontImage from './nina-hill-pKXPJWksvUg-unsplashmini.jpg';
 import clearance1Img from './2568671.png';
 import clearance2Img from './Scalp_Body_Scrub_Melrose_Place.jpg';
+import clearance3Img from './A_24HR-Flawless-Brow-Styling-Kit.jpg';
+import clearance4Img from './absolutenyperfectpair.png';
+import clearance5Img from './wildgrowth.png';
+import clearance6Img from './holographicliquideyeshadow.png';
+import clearance7Img from './shibuyalash.png';
+import clearance8Img from './silkylipdress.png';
+import clearance9Img from './snuggie.png';
+import clearance10Img from './arganoil.png';
+import clearance11Img from './24hrgeleyeliner.png';
+import clearance12Img from './wonderlacebond.png';
+import clearance13Img from './pharaohpowderbrush.png';
+import clearance14Img from './cairolash.png';
+import clearance15Img from './mielle.png';
+import clearance16Img from './pristine.png';
 //git subtree push --prefix dist origin gh-pages
 
 const header = document.createElement('div');
@@ -43,7 +57,7 @@ function dropMenu(location) {
   const hairLink = document.createElement('a');
   const hairLinkText = document.createTextNode("HAIR");
   hairLink.appendChild(hairLinkText);
-  hairLink.href = "";
+  //hairLink.href = "";
   hair.appendChild(hairLink);
 
   hairLink.onclick = function() {
@@ -247,7 +261,7 @@ function dropMenu(location) {
   const hairCareLink = document.createElement('a')
   const hairCareLinkText = document.createTextNode("HAIR CARE");
   hairCareLink.appendChild(hairCareLinkText);
-  hairCareLink.href = "";
+  //hairCareLink.href = "";
   hairCare.appendChild(hairCareLink);
   
   const hairCareMenuSub = document.createElement('div');
@@ -395,7 +409,7 @@ function dropMenu(location) {
   const cosmeticsLink = document.createElement('a')
   const cosmeticsLinkText = document.createTextNode("COSMETICS");
   cosmeticsLink.appendChild(cosmeticsLinkText);
-  cosmeticsLink.href = "";
+  //cosmeticsLink.href = "";
   cosmetics.appendChild(cosmeticsLink);
 
   const cosmeticsMenuSub = document.createElement('div');
@@ -464,7 +478,7 @@ function dropMenu(location) {
   const skincareLink = document.createElement('a')
   const skincareLinkText = document.createTextNode("SKIN CARE");
   skincareLink.appendChild(skincareLinkText);
-  skincareLink.href = "";
+  //skincareLink.href = "";
   skincare.appendChild(skincareLink);
 
   const lashes = document.createElement('li');
@@ -472,7 +486,7 @@ function dropMenu(location) {
   const lashesLink = document.createElement('a')
   const lashesLinkText = document.createTextNode("LASHES");
   lashesLink.appendChild(lashesLinkText);
-  lashesLink.href = "";
+  //lashesLink.href = "";
   lashes.appendChild(lashesLink);
 
   const beautyServices = document.createElement('li');
@@ -480,7 +494,7 @@ function dropMenu(location) {
   const beautyServicesLink = document.createElement('a')
   const beautyServicesLinkText = document.createTextNode("BEAUTY SERVICES");
   beautyServicesLink.appendChild(beautyServicesLinkText);
-  beautyServicesLink.href = "";
+  //beautyServicesLink.href = "";
   beautyServices.appendChild(beautyServicesLink);
 
   const accessories = document.createElement('li');
@@ -488,7 +502,7 @@ function dropMenu(location) {
   const accessoriesLink = document.createElement('a')
   const accessoriesLinkText = document.createTextNode("ACCESSORIES");
   accessoriesLink.appendChild(accessoriesLinkText);
-  accessoriesLink.href = "";
+  //accessoriesLink.href = "";
   accessories.appendChild(accessoriesLink);
 }
 dropMenu(nav);
@@ -541,8 +555,37 @@ const clearance1 = new Item("IT COSMETICS: YOUR SKIN BETTER FOUNDATION + SKINCAR
 addItemToArray(clearanceArray, clearance1);
 const clearance2 = new Item("OUAI: SCALP & BODY SCRUB", "$40.00", clearance2Img);
 addItemToArray(clearanceArray, clearance2);
-const clearance3 = new Item("NEW ITEM", "FREE", );
+const clearance3 = new Item("24 HOUR FLAWLESS BROW STYLING KIT", "$2.00", clearance3Img);
 addItemToArray(clearanceArray, clearance3);
+const clearance4 = new Item("PERFECT PAIR LIP DUO", "$7.99", clearance4Img);
+addItemToArray(clearanceArray, clearance4);
+const clearance5 = new Item("WILD GROWTH: HAIR OIL", "$10.99", clearance5Img);
+addItemToArray(clearanceArray, clearance5);
+const clearance6 = new Item("HOLOGRAPHIC LIQUID EYESHADOW", "$1.99", clearance6Img);
+addItemToArray(clearanceArray, clearance6);
+const clearance7 = new Item("SHIBUYA - COLOR CAT 3D LASH", "$1.00", clearance7Img);
+addItemToArray(clearanceArray, clearance7);
+const clearance8 = new Item("SILKY LIP DRESS", "$1.99", clearance8Img);
+addItemToArray(clearanceArray, clearance8);
+const clearance9 = new Item("SNUGGIE LIP CRAYON", "$2.99", clearance9Img);
+addItemToArray(clearanceArray, clearance9);
+const clearance10 = new Item("ARGAN OIL FROM MOROCCO", "$4.99", clearance10Img);
+addItemToArray(clearanceArray, clearance10);
+const clearance11 = new Item("24 HOUR GEL EYELINER PENCIL", "$1.00", clearance11Img);
+addItemToArray(clearanceArray, clearance11);
+const clearance12 = new Item("WONDER LACE AND BOND WATERPROOF ADHESIVE - EXTRA MEGA HOLD", "$10.99", clearance12Img);
+addItemToArray(clearanceArray, clearance12);
+const clearance13 = new Item("SECRET OF PHARAOH POWDER BRUSH", "$7.49", clearance13Img);
+addItemToArray(clearanceArray, clearance13);
+const clearance14 = new Item("CAIRO - COUNTLESS MINK CAT 25MM 3D LASHES", "$9.99", clearance14Img);
+addItemToArray(clearanceArray, clearance14);
+const clearance15 = new Item("MIELLE ORGANICS: ROSEMARY MINT SCALP & STRENGTHENING OIL 2OZ", "$11.99", clearance15Img);
+addItemToArray(clearanceArray, clearance15);
+const clearance16 = new Item("PRISTINE: DYE 613 BUNDLES 3PCS + HD 4X4 CLOSURE - BODY WAVE", "$109.99", clearance16Img);
+addItemToArray(clearanceArray, clearance16);
+
+
+
 
 function display(location, array) {
   for (let eachItem of array) {

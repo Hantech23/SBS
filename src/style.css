@@ -100,7 +100,9 @@ nav a{
     padding: .75em 1.75em;
     color: black;
 }
-
+.menu-main li {
+    cursor: pointer;
+}
 .menu-sub {
     position: absolute;
     background-color: white;
@@ -175,6 +177,7 @@ nav li:hover .menu-sub {
     padding: 0 12.5%;
     font-size: 12px;
     letter-spacing: 1px;
+    row-gap: 30px;
 }
 
 .itemImage {
@@ -185,8 +188,8 @@ h3 {
     font-family: Roboto;
     padding: 0 12.5%;
     font-weight: 100;
-    font-size: 19.5px;
-    letter-spacing: 1px;
+    font-size: 19px;
+    letter-spacing: 1.5px;
 }
 
 .footer {
