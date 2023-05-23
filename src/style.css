@@ -192,12 +192,11 @@ h3 {
 .footer {
     background-color: black;
     color: white;
-    height: 100px;
     text-align: center;
     font-family: Roboto;
     font-size: 12px;
     letter-spacing: 1px;
     margin-top: 5%;
     vertical-align: center;
-    padding-top: 90px;
+    padding: 2%;
 }

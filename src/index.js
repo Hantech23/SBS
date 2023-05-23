@@ -46,6 +46,10 @@ function dropMenu(location) {
   hairLink.href = "";
   hair.appendChild(hairLink);
 
+  hairLink.onclick = function() {
+    console.log("hey hair was clicked hello hi");
+  }
+
   const hairMenuSub = document.createElement('div');
   hairMenuSub.classList.add('menu-sub');
   hair.appendChild(hairMenuSub);
@@ -316,6 +320,76 @@ function dropMenu(location) {
   hairCareSub2Link.href = "";
   hairCareSub2.appendChild(hairCareSub2Link);
 
+  const hairCareSub2ItemsContainer = document.createElement('div');
+  hairCareSub2ItemsContainer.classList.add('menu-item');
+  hairCareSub2.appendChild(hairCareSub2ItemsContainer);
+  const hairCareSub2Items = document.createElement('ul');
+  hairCareSub2ItemsContainer.appendChild(hairCareSub2Items);
+
+  const hairCareSub2Item1 = document.createElement('li');
+  hairCareSub2Items.appendChild(hairCareSub2Item1);
+  const hairCareSub2Item1Link = document.createElement('a');
+  const hairCareSub2Item1LinkText = document.createTextNode("CLARIFYING SHAMPOOS");
+  hairCareSub2Item1Link.appendChild(hairCareSub2Item1LinkText);
+  hairCareSub2Item1Link.href = "";
+  hairCareSub2Item1.appendChild(hairCareSub2Item1Link);
+
+  const hairCareSub2Item2 = document.createElement('li');
+  hairCareSub2Items.appendChild(hairCareSub2Item2);
+  const hairCareSub2Item2Link = document.createElement('a');
+  const hairCareSub2Item2LinkText = document.createTextNode("SULFATE-FREE SHAMPOOS");
+  hairCareSub2Item2Link.appendChild(hairCareSub2Item2LinkText);
+  hairCareSub2Item2Link.href = "";
+  hairCareSub2Item2.appendChild(hairCareSub2Item2Link);
+
+  const hairCareSub2Item3 = document.createElement('li');
+  hairCareSub2Items.appendChild(hairCareSub2Item3);
+  const hairCareSub2Item3Link = document.createElement('a');
+  const hairCareSub2Item3LinkText = document.createTextNode("MOISTURIZING SHAMPOOS");
+  hairCareSub2Item3Link.appendChild(hairCareSub2Item3LinkText);
+  hairCareSub2Item3Link.href = "";
+  hairCareSub2Item3.appendChild(hairCareSub2Item3Link);
+  //NATURAL CONDITIONERS & TREATMENTS
+  const hairCareSub3 = document.createElement('li');
+  hairCareSub.appendChild(hairCareSub3);
+  const hairCareSub3Link = document.createElement('a');
+  const hairCareSub3LinkText = document.createTextNode("NATURAL CONDITIONERS & TREATMENTS");
+  hairCareSub3Link.appendChild(hairCareSub3LinkText);
+  hairCareSub3Link.href = "";
+  hairCareSub3.appendChild(hairCareSub3Link);
+
+  const hairCareSub3ItemsContainer = document.createElement('div');
+  hairCareSub3ItemsContainer.classList.add('menu-item');
+  hairCareSub3.appendChild(hairCareSub3ItemsContainer);
+  const hairCareSub3Items = document.createElement('ul');
+  hairCareSub3ItemsContainer.appendChild(hairCareSub3Items);
+
+  const hairCareSub3Item1 = document.createElement('li');
+  hairCareSub3Items.appendChild(hairCareSub3Item1);
+  const hairCareSub3Item1Link = document.createElement('a');
+  const hairCareSub3Item1LinkText = document.createTextNode("DAILY CONDITIONERS");
+  hairCareSub3Item1Link.appendChild(hairCareSub3Item1LinkText);
+  hairCareSub3Item1Link.href = "";
+  hairCareSub3Item1.appendChild(hairCareSub3Item1Link);
+
+  const hairCareSub3Item2 = document.createElement('li');
+  hairCareSub3Items.appendChild(hairCareSub3Item2);
+  const hairCareSub3Item2Link = document.createElement('a');
+  const hairCareSub3Item2LinkText = document.createTextNode("LEAVE-IN CONDITIONERS");
+  hairCareSub3Item2Link.appendChild(hairCareSub3Item2LinkText);
+  hairCareSub3Item2Link.href = "";
+  hairCareSub3Item2.appendChild(hairCareSub3Item2Link);
+
+  const hairCareSub3Item3 = document.createElement('li');
+  hairCareSub3Items.appendChild(hairCareSub3Item3);
+  const hairCareSub3Item3Link = document.createElement('a');
+  const hairCareSub3Item3LinkText = document.createTextNode("TREATMENT, MASKS, & DEEP CONDITIONERS");
+  hairCareSub3Item3Link.appendChild(hairCareSub3Item3LinkText);
+  hairCareSub3Item3Link.href = "";
+  hairCareSub3Item3.appendChild(hairCareSub3Item3Link);
+
+
+  //COSMETICS
   const cosmetics = document.createElement('li');
   menuMain.appendChild(cosmetics);
   const cosmeticsLink = document.createElement('a')
@@ -323,6 +397,67 @@ function dropMenu(location) {
   cosmeticsLink.appendChild(cosmeticsLinkText);
   cosmeticsLink.href = "";
   cosmetics.appendChild(cosmeticsLink);
+
+  const cosmeticsMenuSub = document.createElement('div');
+  cosmeticsMenuSub.classList.add('menu-sub');
+  cosmetics.appendChild(cosmeticsMenuSub);
+
+  const cosmeticsSub = document.createElement('ul');
+  cosmeticsMenuSub.appendChild(cosmeticsSub);
+  
+  const cosmeticsSub1 = document.createElement('li');
+  cosmeticsSub.appendChild(cosmeticsSub1);
+  const cosmeticsSub1Link = document.createElement('a');
+  const cosmeticsSub1LinkText = document.createTextNode("K BEAUTY");
+  cosmeticsSub1Link.appendChild(cosmeticsSub1LinkText);
+  cosmeticsSub1Link.href = "";
+  cosmeticsSub1.appendChild(cosmeticsSub1Link);
+
+  const cosmeticsSub2 = document.createElement('li');
+  cosmeticsSub.appendChild(cosmeticsSub2);
+  const cosmeticsSub2Link = document.createElement('a');
+  const cosmeticsSub2LinkText = document.createTextNode("EYES");
+  cosmeticsSub2Link.appendChild(cosmeticsSub2LinkText);
+  cosmeticsSub2Link.href = "";
+  cosmeticsSub2.appendChild(cosmeticsSub2Link);
+
+  const cosmeticsSub3 = document.createElement('li');
+  cosmeticsSub.appendChild(cosmeticsSub3);
+  const cosmeticsSub3Link = document.createElement('a');
+  const cosmeticsSub3LinkText = document.createTextNode("LIPS");
+  cosmeticsSub3Link.appendChild(cosmeticsSub3LinkText);
+  cosmeticsSub3Link.href = "";
+  cosmeticsSub3.appendChild(cosmeticsSub3Link);
+
+  const cosmeticsSub4 = document.createElement('li');
+  cosmeticsSub.appendChild(cosmeticsSub4);
+  const cosmeticsSub4Link = document.createElement('a');
+  const cosmeticsSub4LinkText = document.createTextNode("FACE");
+  cosmeticsSub4Link.appendChild(cosmeticsSub4LinkText);
+  cosmeticsSub4Link.href = "";
+  cosmeticsSub4.appendChild(cosmeticsSub4Link);
+
+  const cosmeticsSub5 = document.createElement('li');
+  cosmeticsSub.appendChild(cosmeticsSub5);
+  const cosmeticsSub5Link = document.createElement('a');
+  const cosmeticsSub5LinkText = document.createTextNode("FACE CARE");
+  cosmeticsSub5Link.appendChild(cosmeticsSub5LinkText);
+  cosmeticsSub5Link.href = "";
+  cosmeticsSub5.appendChild(cosmeticsSub5Link);
+
+  const cosmeticsSub6 = document.createElement('li');
+  cosmeticsSub.appendChild(cosmeticsSub6);
+  const cosmeticsSub6Link = document.createElement('a');
+  const cosmeticsSub6LinkText = document.createTextNode("BODY CARE");
+  cosmeticsSub6Link.appendChild(cosmeticsSub6LinkText);
+  cosmeticsSub6Link.href = "";
+  cosmeticsSub6.appendChild(cosmeticsSub6Link);
+
+
+
+
+
+
 
   const skincare = document.createElement('li');
   menuMain.appendChild(skincare);
@@ -406,6 +541,8 @@ const clearance1 = new Item("IT COSMETICS: YOUR SKIN BETTER FOUNDATION + SKINCAR
 addItemToArray(clearanceArray, clearance1);
 const clearance2 = new Item("OUAI: SCALP & BODY SCRUB", "$40.00", clearance2Img);
 addItemToArray(clearanceArray, clearance2);
+const clearance3 = new Item("NEW ITEM", "FREE", );
+addItemToArray(clearanceArray, clearance3);
 
 function display(location, array) {
   for (let eachItem of array) {
